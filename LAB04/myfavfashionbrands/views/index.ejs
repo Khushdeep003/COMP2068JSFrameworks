@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Fashion Brands</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .jumbotron {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .jumbotron h1 {
+            font-size: 3rem;
+            color: #343a40;
+        }
+        .jumbotron p {
+            font-size: 1.25rem;
+            margin-bottom: 0;
+        }
+        .card {
+            border: none;
+            transition: all 0.3s ease;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .card img {
+            border-radius: 10px 10px 0 0;
+            height: 200px; /* Set a fixed height for the card images */
+            object-fit: cover; /* Ensure the image covers the entire space */
+        }
+        .card-body {
+            padding: 1.5rem;
+        }
+        .card-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .card-text {
+            font-size: 1rem;
+        }
+        /* Hover effects */
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .card:hover .card-img-top {
+            filter: brightness(80%);
+        }
+        .card:hover .card-title,
+        .card:hover .card-text {
+            color: #007bff; /* Change text color on hover */
+        }
+    </style>
+</head>
+<body>
+    <% include header %>
+
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Welcome to My Favorite Fashion Brands</h1>
+        <p class="lead">Discover the world of fashion with my top picks!</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="/images/hm.webp" class="card-img-top" alt="H&M">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">H&M</h5>
+                        <p class="card-text text-center">Explore trendy fashion with H&M's wide range of clothing and accessories.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="/images/zara.webp" class="card-img-top" alt="Zara">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Zara</h5>
+                        <p class="card-text text-center">Experience fast fashion with Zara's latest styles and collections.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="/images/gucci.webp" class="card-img-top" alt="Gucci">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Gucci</h5>
+                        <p class="card-text text-center">Indulge in luxury and sophistication with Gucci's iconic designs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="/images/dior.webp" class="card-img-top" alt="Dior">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Dior</h5>
+                        <p class="card-text text-center">Discover timeless elegance with Dior's exquisite fashion, fragrances, cosmetics, and accessories.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
