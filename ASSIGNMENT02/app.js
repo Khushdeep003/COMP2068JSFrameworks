@@ -8,6 +8,7 @@ const bcrypt = require('bcrypt'); // Importing bcrypt for password hashing
 const User = require('./models/user'); // Importing the User model
 const Task = require('./models/task'); // Importing the task model
 
+
 // Initializing the express app
 const app = express(); // Creating an instance of the Express app
 const PORT = process.env.PORT || 3001; // Defining the port number
